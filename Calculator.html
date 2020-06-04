@@ -1,0 +1,98 @@
+<html>
+<head>
+<!-- <link rel="stylesheet" href="style.css" /> -->
+ <style type="text/css">
+ 	body{
+ 		background: #00ace6;
+ 	}
+ .calculator{
+	height:393px;
+	width:250px;
+	background:#3333ff;
+	border:3px solid black;
+	border-radius: 10px;
+	box-shadow:1px 15px 10px black;
+	margin: 40 auto;
+	padding: 10px;
+ }
+#scrn{
+width: 250px;
+	height: 100px;
+	border:none;
+	overflow: hidden;
+	border-radius: 5px 5px 0px 0px;
+	margin-bottom: 5px;
+	padding: 5px;
+	font-size: 30px;
+	border-bottom: 2px solid cadetblue;
+	
+}
+.contant{
+	padding:1px;
+}
+#clear{
+	width:140px;
+	padding: 10px;
+	font-size: 18px;
+	background: #ff8080;
+	border: none;
+	
+}
+#modulas{
+	width:50px;
+	padding: 10px;
+	font-size: 18px;
+	margin-bottom:2px;
+	background:#ff8080;
+	border: none; 
+}
+#midbutton{
+	width:78px;
+	padding: 10px;
+	font-size: 18px;
+	margin:1px
+
+}
+.num{
+	background: #66cc99;
+	border: none;
+}
+ 
+ 
+ </style>
+</head>
+<body>
+<div class="calculator">
+<form action="" name="cal">
+<input id="scrn" dir="rtl" type="text" name="screen" />
+<br />
+<span class="contant">
+<input id="clear" type="reset" value="Clear" />
+<input id="modulas" type="button" value="%" onclick="cal.screen.value +='%'" />
+<input id="modulas" type="button" value="." onclick="cal.screen.value +='.'" />
+
+<input class="num"  id="midbutton" type="button" value="1" onclick="cal.screen.value +='1'" />
+<input class="num" id="midbutton" type="button" value="2" onclick="cal.screen.value +='2'" />
+<input id="midbutton" type="button" value="-" onclick="cal.screen.value +='-'" />
+<input class="num" id="midbutton" type="button" value="3" onclick="cal.screen.value +='3'" />
+<input class="num"  id="midbutton" type="button" value="4" onclick="cal.screen.value +='4'" />
+<input id="midbutton" type="button" value="*" onclick="cal.screen.value +='*'" />
+
+<input class="num" id="midbutton" type="button" value="5" onclick="cal.screen.value +='5'" />
+<input class="num" id="midbutton" type="button" value="6" onclick="cal.screen.value +='6'" />
+<input id="midbutton" type="button" value="/" onclick="cal.screen.value +='/'" />
+<input class="num" id="midbutton" type="button" value="7" onclick="cal.screen.value +='7'" />
+<input class="num" id="midbutton" type="button" value="8" onclick="cal.screen.value +='8'" />
+<input id="midbutton" type="button" value="+" onclick="cal.screen.value +='+'" />
+
+
+<input class="num" id="midbutton" type="button" value="9" onclick="cal.screen.value +='9'" />
+<input class="num" id="midbutton" type="button" value="0" onclick="cal.screen.value +='0'" />
+
+
+<input id="midbutton" type="button" value="=" onclick="cal.screen.value = eval(cal.screen.value)" />
+</span>
+</form>
+</div>
+</body>
+</html>
